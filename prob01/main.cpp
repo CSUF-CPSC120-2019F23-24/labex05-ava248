@@ -28,15 +28,18 @@ int main()
   f2 *= 0.01;
 
   // TODO#1 add comment describing what's happening
-  std::cout << "\n**comment**" << std::endl;
+  std::cout << "\nThe double and the float are drifting farther and farther apart from each other since the value of d2 & f2 are getting closer to 0" << std::endl;
   std::cout << sizeof(d2) << " bytes, value: " << d2 << std::endl;
   std::cout << sizeof(f2) << " bytes, value: " << f2 << std::endl;
 
   d2 *= 0.1;
   f2 *= 0.1;
 
+
+
+
   // TODO#2 add comment describing what's happening
-  std::cout << "\n**comment**" << std::endl;
+  std::cout << "\nThe float value has reached 0 when f2 is equal to 0.1" << std::endl;
   std::cout << sizeof(d2) << " bytes, value: " << d2 << std::endl;
   std::cout << sizeof(f2) << " bytes, value: " << f2 << std::endl;
 
@@ -44,7 +47,7 @@ int main()
   float f3 = 3.5E38;
 
   // TODO#3 add comment describing what happened
-  std::cout << "\n**comment**" << std::endl;
+  std::cout << "\nThe double value displays 3.5E38 when d3 equals 3.5E38 whereas the float value is now an infinite number when f2 is equal to 3.5E38" << std::endl;
   std::cout << std::setprecision(1);
   std::cout << sizeof(d3) << " bytes, value: " << d3 << std::endl;
   std::cout << sizeof(f2) << " bytes, value: " << f3 << std::endl;
